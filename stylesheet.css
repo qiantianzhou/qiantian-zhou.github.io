@@ -2,4 +2,34 @@ body{
 	background-color: #5a2f36;
 	font-family:Hepta Slab; 
 	color: #abd1cb;
+	text-align: center;
+	font-size:15px;
+}
+.center-responsive{ 
+	display:block;
+	max-width:80%; 
+	margin:0 auto;
+	}
+
+nav{
+	background-color:#5a2f36;
+	text-align:center;
+	margin-bottom:10px;
+}
+
+nav ul{
+	list-style: none;
+}
+nav li{
+	display:inline;
+}
+nav a{
+	display:inline-block;
+	padding:20px;
+	text-decoration:none;
+	color:#011C26;
+}
+nav a:hover{
+	background-color:#2976A6;
+	color:#CAA7D9;
 }
