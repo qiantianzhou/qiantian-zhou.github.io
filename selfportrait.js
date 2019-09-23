@@ -12,6 +12,7 @@ function draw() {
 	noStroke();
 	image(img,0,0,width,height);
 	translate(width/2, height/2);
+	rotate(frameCount*PI/60);
 	fill(255,200,160);
 	ellipse(0,0,200,230);
 	fill(143, 122, 83);
@@ -29,8 +30,14 @@ function draw() {
 	fill(212, 177, 74);
 	ellipse(0,20,40,15);
 	fill(0,0,0);
-	ellipse(-40,-20,10,10);
-	ellipse(40,-20,10,10);
+	push();
+	translate(-40,0);
+	ellipse(map(mouseX, 0, width,-5,5),-20,10,10);
+	pop();
+	push();
+	translate(40,0);
+	ellipse(map(mouseX, 0, width,-5,5),-20,10,10);
+	pop();
 	fill(168, 104, 50);
 	beginShape();
 	vertex(-20,50);
