@@ -14,7 +14,7 @@ function draw() {
 	translate(width/2, height/2);
 	rotate(frameCount*PI/60);
 	push();
-	translate(250,150);
+	translate(200,60);
 	rotate(frameCount*PI/20);
 	fill(255,200,160);
 	ellipse(0,0,200,230);
