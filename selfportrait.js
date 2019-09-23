@@ -13,6 +13,9 @@ function draw() {
 	image(img,0,0,width,height);
 	translate(width/2, height/2);
 	rotate(frameCount*PI/60);
+	push();
+	translate(250,150);
+	rotate(frameCount*PI/60);
 	fill(255,200,160);
 	ellipse(0,0,200,230);
 	fill(143, 122, 83);
@@ -59,6 +62,7 @@ function draw() {
 	vertex(10,75);
 	vertex(-10,75);
 	endShape(close);
+	pop();
 	
 
 
